@@ -2,9 +2,9 @@
 
 FactoryGirl.define do
   factory :agency do
-    agency_id "MyString"
-    agency_name "MyString"
-    agency_url "MyString"
-    agency_timezone "MyString"
+    agency_id "TM"
+    agency_name "Transmetro"
+    agency_url "http://www.transmetro.gov.co"
+    agency_timezone "America/Bogota"
   end
 end

@@ -4,7 +4,7 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'rails-api'
+gem 'rails-api', github: 'rails-api/rails-api'
 
 # Use postgresql as the database for Active Record
 gem 'pg'

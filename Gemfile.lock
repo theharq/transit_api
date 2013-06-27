@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/rails-api/rails-api.git
+  revision: 6247deff9c6fd450c4479b03d31f1b6bf118ceba
+  specs:
+    rails-api (0.1.0)
+      actionpack (>= 3.2.11)
+      railties (>= 3.2.11)
+      tzinfo (~> 0.3.31)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,10 +67,6 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.0)
       sprockets-rails (~> 2.0.0)
-    rails-api (0.1.0)
-      actionpack (>= 3.2.11)
-      railties (>= 3.2.11)
-      tzinfo (~> 0.3.31)
     railties (4.0.0)
       actionpack (= 4.0.0)
       activesupport (= 4.0.0)
@@ -107,6 +112,6 @@ DEPENDENCIES
   factory_girl_rails
   pg
   rails (= 4.0.0)
-  rails-api
+  rails-api!
   rspec-rails
   shoulda-matchers

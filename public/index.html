@@ -205,6 +205,17 @@
             <li>
               <h2>Stops</h2>
               <p><code><a href="/api/v1/stops">/api/v1/stops</a></code> returns all stops.</p>
+              <p>Params:</p>
+              <p><code><a href="/api/v1/stops?latitude=11.003534861257206&longitude=-74.81143355369568">?latitude=11.00&longitude=-74.81</a></code> returns stops at 300mts from a especific location.</p>
+              <p><code><a href="/api/v1/stops?limit=20&include_stop_times=true">?limit=20&include_stop_times=true</a></code> returns first 20 stops and stop times for each stop.</p>
+              <p><code><a href="/api/v1/stops?include_stop_times=true&from=now">?include_stop_times=true&from=now</a></code> only returns stop times for each stop with departure_time after right now.</p>
+              <p><code><a href="/api/v1/stops?include_stop_times=true&stop_time_limit=1">?include_stop_times=true&stop_time_limit=1</a></code> returns specified number of stop times for each stop (needs ?include_stop_times=true).</p>
+            </li>
+             <li>
+              <h2>Example </h2>
+              <p><code style="width: 200px;word-wrap: break-word;"><a href="/api/v1/stops?include_stop_times=true&from=now&stop_time_limit=1&latitude=11.003534861257206&longitude=-74.81143355369568">?include_stop_times=true&from=now&stop_time_limit=1&latitude=11.003534861257206&longitude=-74.81143355369568</a></code> stops near Hotel Barranquilla Plaza's location with one stop_time from now.</p>
+
+            </li>
           </ul>
         </div>
       </div>

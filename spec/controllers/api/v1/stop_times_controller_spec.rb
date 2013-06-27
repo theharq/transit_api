@@ -17,7 +17,7 @@ describe Api::V1::StopTimesController, "Actions" do
     it "should return a json response with the stop_times" do
       get :index
       parsed_body = JSON.parse(response.body)
-      parsed_body["stop_times"][0]["trip_str"].should == "8080-7440"
+      parsed_body["stop_times"][0]["trip_id"].should == "8080-7440"
     end
   end
 
@@ -27,7 +27,7 @@ describe Api::V1::StopTimesController, "Actions" do
     it "returns one as the count of stop_times " do
       get :show, id: stop_time.id
       parsed_body = JSON.parse(response.body)
-      parsed_body["stop_time"]["trip_str"].should == "9999-9999"
+      parsed_body["stop_time"]["trip_id"].should == "9999-9999"
     end
   end
 

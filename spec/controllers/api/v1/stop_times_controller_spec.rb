@@ -10,7 +10,6 @@ describe Api::V1::StopTimesController, "Actions" do
     it "returns one as the count of stop_times " do
       get :index
       parsed_body = JSON.parse(response.body)
-      puts parsed_body
       parsed_body["stop_times"].size.should == 1
     end
 

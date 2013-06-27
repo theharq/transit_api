@@ -86,6 +86,10 @@ GEM
       rspec-mocks (~> 2.13.0)
     shoulda-matchers (2.2.0)
       activesupport (>= 3.0.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -115,3 +119,4 @@ DEPENDENCIES
   rails-api!
   rspec-rails
   shoulda-matchers
+  simplecov

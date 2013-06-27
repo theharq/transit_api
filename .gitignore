@@ -17,3 +17,6 @@
 
 # Ignore rvmrc file
 .rvmrc
+
+#Ignore results from simplecov
+/coverage

@@ -2,10 +2,11 @@
 
 FactoryGirl.define do
   factory :trip do
-    route nil
-    calendar nil
-    service_id "MyString"
-    trip_id "MyString"
-    trip_headsign "MyString"
+    route
+    calendar
+    service_id "A"
+    route_str "9999"
+    trip_id "999-000"
+    trip_headsign "X"
   end
 end

@@ -14,7 +14,7 @@ module Api
       private
 
       def stop_params
-        params.permit(:limit, :latitude, :longitude, :distance)
+        params.permit(:limit, :latitude, :longitude, :distance, :from, :include_stop_times, :stop_time_limit)
       end
     end
   end

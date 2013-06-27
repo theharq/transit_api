@@ -2,12 +2,12 @@
 
 FactoryGirl.define do
   factory :calendar do
-    service_id "MyString"
-    monday false
-    tuesday false
-    wednesday false
-    thursday false
-    friday false
+    service_id "A"
+    monday true
+    tuesday true
+    wednesday true
+    thursday true
+    friday true
     saturday false
     sunday false
     start_date "2013-05-05"

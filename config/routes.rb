@@ -5,6 +5,7 @@ TransitApi::Application.routes.draw do
       resources :agencies, only: [:index, :show]
       resources :routes, only: [:index, :show]
       resources :stops, only: [:index, :show]
+      resources :stop_times, only: [:index, :show]
     end
   end
 end

@@ -9,8 +9,9 @@ class StopSerializer < ActiveModel::Serializer
 
   def stop_times
     stop_times = object.stop_times.order("departure_time ASC")
-    stop_times.where("departure_time > ?", Time.now.to_s) if object.from_now
-    stop_times.limit(object.stop_time_limit) if object.stop_time_limit.present?
+    stop_times = stop_times.where("departure_time > ?", Time.now.to_s) if object.from_now
+    stop_times = stop_times.limit(object.stop_time_limit) if object.stop_time_limit.present?
+    stop_times
   end
 
 end

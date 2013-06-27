@@ -2,10 +2,10 @@
 
 FactoryGirl.define do
   factory :route do
-    route_id "MyString"
-    agency nil
-    route_short_name "MyString"
-    route_long_name "MyString"
+    route_id "8080"
+    agency
+    route_short_name "B52"
+    route_long_name "B52_Evergreen_Terrace"
     route_type 1
   end
 end

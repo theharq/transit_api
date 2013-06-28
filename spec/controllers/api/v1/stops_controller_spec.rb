@@ -4,7 +4,7 @@ describe Api::V1::StopsController, "Actions" do
 
   describe "on GET #index" do
     before(:each) do
-      FactoryGirl.create(:stop)
+      FactoryGirl.create(:stop_time)
     end
 
     it "returns one as the count of stops " do
@@ -17,6 +17,12 @@ describe Api::V1::StopsController, "Actions" do
       get :index
       parsed_body = JSON.parse(response.body)
       parsed_body["stops"][0]["stop_name"].should == "1601 NW 82 Avenue"
+    end
+
+    it "should return stop_times if a parameter is sent" do
+      get :index, include_stop_times: 'true'
+      parsed_body = JSON.parse(response.body)
+      parsed_body["stops"][0]["stop_times"].size.should == 1
     end
   end
 

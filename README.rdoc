@@ -2,10 +2,9 @@
 
 Import GTFS dataset into a postgres database and provides a REST API
 
+== Setup
 
-== Installation
-
-Replace the gtfs files inside the public/gtfs directory and run
+After the installation of the rails-api application, place the gtfs files inside the public/gtfs directory and run
 
     rake import_gtfs
 
